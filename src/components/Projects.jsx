@@ -30,7 +30,7 @@ const projects = [
     link: "#"
   },
   {
-    img: `${process.env.PUBLIC_URL}/picture_9.jpg`,
+    img: `${process.env.PUBLIC_URL}/picture_9_.jpg`,
     title: "IoT based Crowd Management System",
     label: "Research-Ongoing",
     desc: "An IoT-based indoor navigation system using BLE 5.3/5.4 and channel sounding to measure crowd density in real-time, guiding individuals to safer exits during emergencies. Aims to reduce panic and improve evacuation efficiency through dynamic crowd distribution.",
