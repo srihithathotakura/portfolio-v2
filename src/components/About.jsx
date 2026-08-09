@@ -21,7 +21,7 @@ const About = forwardRef(({ id }, ref) => (
           <span className="indent">
             I’m <span className="highlight-name">Srihitha Thotakura</span>,
           </span>
-          a third-year Computer Science and Engineering student at Amrita Vishwa Vidyapeetham, Coimbatore.
+          a final-year (4th year, 1st semester) Computer Science and Engineering student at Amrita Vishwa Vidyapeetham, Coimbatore.
           With a passion for coding and design, I blend technical skills with creative problem-solving to craft innovative web solutions.
         </p>
         <p>

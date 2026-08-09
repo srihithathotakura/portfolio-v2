@@ -14,7 +14,7 @@ const Hero = forwardRef(({ scrollTo, id }, ref) => (
     }}
   >
     <ul className="hero-links">
-      {['about', 'education', 'skills', 'projects', 'interests', 'resume', 'contact'].map((secid) => (
+      {['about', 'education', 'skills', 'projects', 'publications', 'interests', 'resume', 'contact'].map((secid) => (
         <li key={secid}>
           <a
             href={`#${secid}`}
