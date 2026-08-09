@@ -5,6 +5,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import AcademicInterests from './components/AcademicInterests';
 import Projects from './components/Projects';
+import Publications from './components/Publications';
 import Interests from './components/Interests';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
@@ -19,6 +20,7 @@ const App = () => {
     skills: useRef(null),
     academicInterests: useRef(null),
     projects: useRef(null),
+    publications: useRef(null),
     interests: useRef(null),
     resume: useRef(null),
     contact: useRef(null),
@@ -36,6 +38,7 @@ const App = () => {
       <Skills ref={sectionRefs.skills} id="skills" />
       <AcademicInterests ref={sectionRefs.academicInterests} id="academic-interests" />
       <Projects ref={sectionRefs.projects} id="projects" />
+      <Publications ref={sectionRefs.publications} id="publications" />
       <Interests ref={sectionRefs.interests} id="interests" />
       <Resume ref={sectionRefs.resume} id="resume" />
       <Contact ref={sectionRefs.contact} id="contact" />
