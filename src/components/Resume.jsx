@@ -6,11 +6,34 @@ const Resume = forwardRef(({ id }, ref) => (
       <h2 className="resume-title">Resume</h2>
       <div className="resume-center">
         <p className="resume-description">
-          Download my resume to learn more about my qualifications and experience.
+          View my resume below, or download a copy to keep.
         </p>
-        <a href="/resume.pdf" className="btn outline resume-btn" download>
-          Download Resume
-        </a>
+
+        <div className="resume-viewer-wrapper">
+          <iframe
+            src={`${process.env.PUBLIC_URL}/resume.pdf`}
+            title="Srihitha Thotakura Resume"
+            className="resume-viewer"
+          />
+        </div>
+
+        <div className="resume-btn-row">
+          <a
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            className="btn outline resume-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Full View
+          </a>
+          <a
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            className="btn resume-btn-primary resume-btn"
+            download="Srihitha_Thotakura_Resume.pdf"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   </section>
