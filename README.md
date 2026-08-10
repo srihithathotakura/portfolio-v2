@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Srihitha Thotakura — Portfolio (v2)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal portfolio site, built with React and deployed on Vercel. It's a
+single-page, scroll/anchor-navigated site covering my background, education,
+skills, projects, publications, interests, resume, and contact info.
 
-## Available Scripts
+**Live site:** _add your Vercel URL here_
 
-In the project directory, you can run:
+## Sections
 
-### `npm start`
+- **About** — intro and background
+- **Education** — academic history
+- **Skills** — categorized skill chips pulled from my resume
+- **Projects** — featured work including PasswordPal, Autofy, AURA, an
+  Emergency Dispatch Management System, and other academic projects
+- **Publications**
+- **Interests**
+- **Resume** — inline PDF viewer with a download option
+- **Contact**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 19 (bootstrapped with Create React App / `react-scripts`)
+- Plain CSS (no framework) — custom typography (Space Grotesk / Inter /
+  JetBrains Mono) and a warm off-white / near-black / indigo color palette
+- Font Awesome + Devicon for icons
 
-### `npm test`
+## Running locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+Runs the app at [http://localhost:3000](http://localhost:3000) in
+development mode with hot reload.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Building for production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Outputs an optimized, minified production build to the `build/` folder.
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is deployed on **Vercel**, connected directly to this GitHub
+repo — every push to `main` triggers a new deployment automatically. There's
+no manual deploy step needed.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Routing is defined in [`vercel.json`](./vercel.json). This app doesn't use
+React Router (it's one page with anchor links), so no catch-all rewrite to
+`index.html` is needed — and shouldn't be added, since a catch-all rewrite
+will also intercept requests for static files like `resume.pdf`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Note: the `deploy` / `predeploy` npm scripts (`gh-pages -d build`) are
+> leftover from an earlier GitHub Pages setup and are no longer used now
+> that deployment happens through Vercel.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project structure
 
-## Learn More
+```
+public/            static assets (images, resume.pdf, favicon, etc.)
+src/components/    one component per section (About, Education, Skills,
+                   Projects, Publications, Interests, Resume, Contact, ...)
+src/App.jsx        assembles the sections into the single page
+src/App.css        all site styling
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Personal project — not licensed for reuse.
