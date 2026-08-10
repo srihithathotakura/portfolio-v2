@@ -32,7 +32,7 @@ const featuredProjects = [
     ]
   },
   {
-    img: `${process.env.PUBLIC_URL}/picture_4.jpg`,
+    img: null,
     title: "Emergency Dispatch Management System",
     label: "Data Structures & Algorithms",
     desc: "Simulated a multi-agency emergency dispatch system in Java using Dijkstra's algorithm for shortest-path routing, a Priority Queue for dispatch prioritization, and a HashMap for location tracking — achieving a 15% improvement in response efficiency in test scenarios.",
@@ -72,7 +72,13 @@ const Projects = forwardRef(({ id }, ref) => (
       <div className="projects-grid">
         {featuredProjects.map(proj => (
           <div className="project-card" key={proj.title}>
-            <img src={proj.img} alt={proj.title} />
+            {proj.img ? (
+              <img src={proj.img} alt={proj.title} />
+            ) : (
+              <div className="project-img-placeholder">
+                <i className="fas fa-code"></i>
+              </div>
+            )}
             <h3 className="project-title-large">{proj.title}</h3>
             <div className="project-label">{proj.label}</div>
             <p>{proj.desc}</p>

@@ -21,20 +21,20 @@ const About = forwardRef(({ id }, ref) => (
           <span className="indent">
             I’m <span className="highlight-name">Srihitha Thotakura</span>,
           </span>
-          a final-year (4th year, 1st semester) Computer Science and Engineering student at Amrita Vishwa Vidyapeetham, Coimbatore.
+          a final-year Computer Science and Engineering student at Amrita Vishwa Vidyapeetham, Coimbatore.
           With a passion for coding and design, I blend technical skills with creative problem-solving to craft innovative web solutions.
         </p>
         <p>
           <span className="indent">
             My journey in tech began with a curiosity for how things work,
           </span>
-          evolving into a deep interest in web development and UI/UX design. I enjoy collaborating with teams, leading projects, and exploring new technologies to build user-friendly applications.
+          evolving into a deep interest in web development, applied machine learning, and turning raw data into decisions. I enjoy building predictive models and interactive dashboards just as much as I enjoy designing user-friendly applications, and I like collaborating with teams to bring both sides — the interface and the insight — together.
         </p>
         <p>
           <span className="indent">
             Beyond academics, I’m committed to personal growth,
           </span>
-          often engaging in workshops, coding challenges, and community initiatives. My goal is to create impactful digital experiences that inspire and connect people.
+          often engaging in workshops, coding challenges, and community initiatives. My goal is to create impactful, data-informed digital experiences that inspire and connect people.
         </p>
         <div className="skills-box">
           <p>
