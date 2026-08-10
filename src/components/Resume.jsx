@@ -10,11 +10,24 @@ const Resume = forwardRef(({ id }, ref) => (
         </p>
 
         <div className="resume-viewer-wrapper">
-          <iframe
-            src={`${process.env.PUBLIC_URL}/resume.pdf`}
-            title="Srihitha Thotakura Resume"
+          <object
+            data={`${process.env.PUBLIC_URL}/resume.pdf#toolbar=0`}
+            type="application/pdf"
+            aria-label="Srihitha Thotakura Resume"
             className="resume-viewer"
-          />
+          >
+            <p className="resume-fallback-text">
+              Your browser couldn't preview the PDF inline.{" "}
+              <a
+                href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click here to view it directly
+              </a>
+              .
+            </p>
+          </object>
         </div>
 
         <div className="resume-btn-row">
