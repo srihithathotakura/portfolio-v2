@@ -765,6 +765,22 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
   border-radius: 10px;
   background: #fff;
 }
+.resume-fallback-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+  color: #2A2A2A;
+}
+.resume-fallback-text a {
+  color: #2A2A2A;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 4px;
+}
 .resume-btn-row {
   display: flex;
   gap: 16px;
