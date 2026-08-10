@@ -1,10 +1,10 @@
 import React, { forwardRef } from "react";
 
 const interests = [
-  "Artificial Intelligence",
-  "Web Development",
-  "UI/UX Design",
-  "Data Structures"
+  "Machine Learning & AI",
+  "Full-Stack Development",
+  "Data Analytics",
+  "UI/UX Design"
 ];
 
 const AcademicInterests = forwardRef(({ id }, ref) => (
